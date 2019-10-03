@@ -1,0 +1,9 @@
+.body-window {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 5px;
+}
+.size-radio-div {
+  width: 90%;
+  margin: 5px 5%;
+}

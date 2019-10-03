@@ -1,0 +1,72 @@
+.page-numbers-for-context-window-vue {
+  cursor: pointer;
+}
+.page-active-for-context-window-vue {
+  color: #4184C5;
+}
+.page-numbers-for-context-window-vue:hover {
+  color: #4184C5;
+}
+.sub-page-for-context-window-vue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-page-for-context-window-vue {
+  font-family: 'Calibri Light';
+}
+@media (min-width:1921px) {
+  .page-for-context-window-vue {
+    font-size: 20px;
+    padding: 2px 10px;
+  }
+}
+
+@media (min-width:1681px) and (max-width:1920px) {
+  .page-for-context-window-vue {
+    font-size: 20px;
+    padding: 2px 10px;
+  }
+}
+
+@media (min-width:1400px) and (max-width:1680px) {
+  .page-for-context-window-vue {
+    font-size: 18px;
+    padding: 2px 10px;
+  }
+}
+
+@media (min-width:1200px) and (max-width:1399px) {
+  .page-for-context-window-vue {
+    font-size: 18px;
+    padding: 2px 10px;
+  }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+  .page-for-context-window-vue {
+    font-size: 18px;
+    padding: 2px 10px;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .page-for-context-window-vue {
+    font-size: 16px;
+    padding: 2px 10px;
+  }
+}
+
+@media (min-width:480px) and (max-width:767px) {
+  .page-for-context-window-vue {
+    font-size: 14px;
+    padding: 2px 10px;
+  }
+}
+
+@media (max-width:479px) {
+  .page-for-context-window-vue {
+    font-size: 14px;
+    padding: 2px 10px;
+  }
+} 

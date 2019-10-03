@@ -1,0 +1,227 @@
+*[v-cloak] {
+  display: none;
+}
+#create-poll {
+  width: 80%;
+  font-family: 'Calibri';
+}
+.fade-enter-active {
+  transition: opacity .5s;
+}
+.fade-leave-active {
+  /*transition: opacity .2s;*/
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+.regular-text-poll-create {
+  color: #9c9c9c;
+  margin: 5px 0px 5px 0px;
+}
+.head-text-poll-create {
+  color: #8ac7c7;
+}
+.pointer {
+  cursor: pointer;
+}
+.input-poll-create {
+  border: 1px solid #9c9c9c;
+  text-shadow: 0 1px 1px white;
+  padding: 5px 5px 5px 5px;
+  margin: 3px 0px;
+  color: #989898;
+}
+.input-poll-create:focus {
+  outline: none !important;
+  border-color: #8ac7c7;
+  box-shadow: 0 0 6px #8ac7c7;
+  color: #8ac7c7;
+}
+.submit-button-poll-create {
+  border: 1px solid #9c9c9c;
+  border-radius: 15px;
+  padding: 7px 10px 7px 10px;
+  color: #9c9c9c;
+  width: max-content;
+  margin: 20px 0px 0px 0px;
+}
+.submit-button-poll-create:hover {
+  border: 1px solid #8ac7c7;
+  color: #8ac7c7;
+}
+
+@media (min-width:1921px) {
+  #create-poll {
+    margin: 10% 0% 0% 15%;
+  }
+  .regular-size-poll-create {
+    font-size: 19px;
+  }
+  .head-size-poll-create {
+    font-size: 22px;
+  }
+  .input-poll-create {
+    width: 40vw;
+  }
+  .if-window-div-poll-create {
+    margin: 15px 0px 0px 0px;
+  }
+  .point-marker-poll-create {
+    display: none;
+  }
+}
+
+@media (min-width:1681px) and (max-width:1920px) {
+  #create-poll {
+    margin: 10% 0% 0% 15%;
+  }
+  .regular-size-poll-create {
+    font-size: 19px;
+  }
+  .head-size-poll-create {
+    font-size: 22px;
+  }
+  .input-poll-create {
+    width: 40vw;
+  }
+  .if-window-div-poll-create {
+    margin: 15px 0px 0px 0px;
+  }
+  .point-marker-poll-create {
+    display: none;
+  }
+}
+
+@media (min-width:1400px) and (max-width:1680px) {
+  #create-poll {
+    margin: 10% 0% 0% 15%;
+  }
+  .regular-size-poll-create {
+    font-size: 17px;
+  }
+  .head-size-poll-create {
+    font-size: 20px;
+  }
+  .input-poll-create {
+    width: 50vw;
+  }
+  .if-window-div-poll-create {
+    margin: 15px 0px 0px 0px;
+  }
+  .point-marker-poll-create {
+    display: none;
+  }
+}
+
+@media (min-width:1200px) and (max-width:1399px) {
+  #create-poll {
+    margin: 10% 0% 0% 15%;
+  }
+  .regular-size-poll-create {
+    font-size: 15px;
+  }
+  .head-size-poll-create {
+    font-size: 18px;
+  }
+  .input-poll-create {
+    width: 50vw;
+  }
+  .if-window-div-poll-create {
+    margin: 15px 0px 0px 0px;
+  }
+  .point-marker-poll-create {
+    display: none;
+  }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+  #create-poll {
+    margin: 10% 0% 0% 15%;
+  }
+  .regular-size-poll-create {
+    font-size: 13px;
+  }
+  .head-size-poll-create {
+    font-size: 16px;
+  }
+  .input-poll-create {
+    width: 50vw;
+  }
+  .if-window-div-poll-create {
+    margin: 15px 0px 0px 0px;
+  }
+  .point-marker-poll-create {
+    display: none;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  #create-poll {
+    margin: 10% 0% 0% 15%;
+  }
+  .regular-size-poll-create {
+    font-size: 12px;
+  }
+  .head-size-poll-create {
+    font-size: 14px;
+  }
+  .input-poll-create {
+    width: 60vw;
+  }
+  .if-window-div-poll-create {
+    margin: 15px 0px 0px 0px;
+  }
+  .point-marker-poll-create {
+    display: none;
+  }
+}
+
+@media (min-width:480px) and (max-width:767px) {
+  #create-poll {
+    margin: 10% 0% 0% 15%;
+  }
+  .regular-size-poll-create {
+    font-size: 12px;
+  }
+  .head-size-poll-create {
+    font-size: 14px;
+  }
+  .input-poll-create {
+    width: 60vw;
+  }
+  .if-window-div-poll-create {
+    margin: 15px 0px 0px 0px;
+  }
+  .slash-poll-create {
+    display: none;
+  }
+  .non-span-poll-create {
+    display: block;
+    margin: 5px 0px 5px 0px;
+  }
+}
+
+@media (max-width:479px) {
+  #create-poll {
+    margin: 10% 0% 0% 15%;
+  }
+  .regular-size-poll-create {
+    font-size: 12px;
+  }
+  .head-size-poll-create {
+    font-size: 14px;
+  }
+  .input-poll-create {
+    width: 60vw;
+  }
+  .if-window-div-poll-create {
+    margin: 15px 0px 0px 0px;
+  }
+  .slash-poll-create {
+    display: none;
+  }
+  .non-span-poll-create {
+    display: block;
+    margin: 5px 0px 5px 0px;
+  }
+}

@@ -1,0 +1,126 @@
+.text-input-vue {
+  font-family: 'Calibri Light';
+}
+.boder-text-input-vue {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+.boder-text-input-vue:hover, .boder-text-input-vue:focus-within {
+  border-bottom: 1px solid #4D4D4D;
+}
+.outline-hide-text-input-vue {
+  width: 100%;
+  margin: 5px 0px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.outline-hide-text-input-vue:hover,
+.outline-hide-text-input-vue:focus,
+.boder-text-input-vue:hover .outline-hide-text-input-vue {
+  color: #4D4D4D;
+}
+div[img-loope="true"] {
+  background: url('./m_focus.png');
+  opacity: 0.4;
+  cursor: text;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+div[img-cross="true"] {
+  background: url('./cross.png');
+  opacity: 0.4;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
+}
+.boder-text-input-vue:hover div[img-loope="true"],
+.boder-text-input-vue:focus-within div[img-loope="true"] {
+  background: url('./m_focus.png');
+  opacity: 1;
+}
+.boder-text-input-vue:hover div[img-cross="true"],
+.boder-text-input-vue:focus-within div[img-cross="true"] {
+  background: url('./cross.png');
+  opacity: 1;
+}
+.outline-hide-text-input-vue,
+.outline-hide-text-input-vue:hover,
+.outline-hide-text-input-vue:focus {
+  outline: 1px solid white;
+  outline-offset: -1px;
+  border: 1px;
+}
+@media (min-width:1200px) {
+  .text-input-vue {
+    font-size: 20px;
+  }
+  div[img-for-input="true"],
+  .boder-text-input-vue:hover div[img-for-input="true"],
+  .boder-text-input-vue:focus-within div[img-for-input="true"] {
+    background-size: 20px;
+  }
+  div[img-for-input="true"] {
+    height: 20px;
+    width: 20px;
+  }
+  .outline-hide-text-input-vue {
+    padding: 0px 0px 0px 25px;
+  }
+}
+
+@media (min-width:768px) and (max-width:1199px) {
+  .text-input-vue {
+    font-size: 18px;
+  }
+  div[img-for-input="true"],
+  .boder-text-input-vue:hover div[img-for-input="true"],
+  .boder-text-input-vue:focus-within div[img-for-input="true"] {
+    background-size: 18px;
+  }
+  div[img-for-input="true"] {
+    height: 18px;
+    width: 18px;
+  }
+  .outline-hide-text-input-vue {
+    padding: 0px 0px 0px 23px;
+  }
+}
+
+@media (min-width:480px) and (max-width:767px) {
+  .text-input-vue {
+    font-size: 16px;
+  }
+  div[img-for-input="true"],
+  .boder-text-input-vue:hover div[img-for-input="true"],
+  .boder-text-input-vue:focus-within div[img-for-input="true"] {
+    background-size: 16px;
+  }
+  div[img-for-input="true"] {
+    height: 16px;
+    width: 16px;
+  }
+  .outline-hide-text-input-vue {
+    padding: 0px 0px 0px 21px;
+  }
+}
+
+@media (max-width:479px) {
+  .text-input-vue {
+    font-size: 14px;
+  }
+  div[img-for-input="true"],
+  .boder-text-input-vue:hover div[img-for-input="true"],
+  .boder-text-input-vue:focus-within div[img-for-input="true"] {
+    background-size: 14px;
+  }
+  div[img-for-input="true"] {
+    height: 14px;
+    width: 14px;
+  }
+  .outline-hide-text-input-vue {
+    padding: 0px 0px 0px 19px;
+  }
+}

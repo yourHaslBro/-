@@ -1,0 +1,141 @@
+<script src="..\lodash.js"></script>
+<script src="..\vue.js"></script>
+<script src="..\Компонент модальное окно\modalWindow.js"></script>
+<link rel="stylesheet" href="..\Компонент модальное окно\modalWindow.css">
+<link rel="stylesheet" href=".\pollCreate.css">
+
+<div id="create-poll" v-cloak>
+  <span
+    v-for="(val, key, index) in menuObject"
+    class="regular-text-poll-create head-size-poll-create non-span-poll-create">
+      <span class="point-marker-poll-create" :class="classBind(key)">&#8226;</span>
+      <span
+        @click="changeWindow(key)"
+        class="pointer"
+        :class="classBind(key)"> {{val}} </span>
+      <span
+        v-if="menuObjectLastIndex !== index"
+        class="slash-poll-create"> / </span>
+  </span>
+  <!-- enter poll -->
+  <div v-if="currWindow === 'enterFT'" class="if-window-div-poll-create">
+    <div class="regular-text-poll-create regular-size-poll-create"> Название </div>
+    <input
+      class="input-poll-create regular-size-poll-create"
+      autocomplete="off"
+      type="text"
+      v-model="enterFTData.name"
+    >
+    <div class="regular-text-poll-create regular-size-poll-create"> Наименование тем программы </div>
+    <transition-group name="fade" tag="div">
+      <input
+        v-for="(value, index) in enterFTData.task"
+        :key="index + 'ep'"
+        class="input-poll-create regular-size-poll-create"
+        autocomplete="off"
+        type="text"
+        @input="changePollArray($event.target.value, index, 'enterFTData.task')"
+        :value="value"
+      >
+    </transition-group>
+    <div
+      @click="postAxios('enterFTData')"
+      class="pointer submit-button-poll-create head-size-poll-create">
+      Создать анкету
+    </div>
+  </div>
+  <!-- exit poll -->
+  <div v-if="currWindow === 'exitFT'" class="if-window-div-poll-create">
+    <div class="regular-text-poll-create regular-size-poll-create"> Название </div>
+    <input
+      class="input-poll-create regular-size-poll-create"
+      autocomplete="off"
+      type="text"
+      v-model="exitFTData.name"
+    >
+    <div class="regular-text-poll-create regular-size-poll-create"> Наименование тем программы </div>
+    <transition-group name="fade" tag="div">
+      <input
+        v-for="(value, index) in exitFTData.task"
+        :key="index + 'exp'"
+        class="input-poll-create regular-size-poll-create"
+        autocomplete="off"
+        type="text"
+        @input="changePollArray($event.target.value, index, 'exitFTData.task')"
+        :value="value"
+      >
+    </transition-group>
+    <div class="regular-text-poll-create regular-size-poll-create"> Преподаватели </div>
+    <transition-group name="fade" tag="div">
+      <input
+        v-for="(value, index) in exitFTData.teach"
+        :key="index + 'expt'"
+        class="input-poll-create regular-size-poll-create"
+        autocomplete="off"
+        type="text"
+        @input="changePollArray($event.target.value, index, 'exitFTData.teach')"
+        :value="value"
+      >
+    </transition-group>
+    <div
+      @click="postAxios('exitFTData')"
+      class="pointer submit-button-poll-create head-size-poll-create">
+      Создать анкету
+    </div>
+  </div>
+  <!-- exit dist poll -->
+  <div v-if="currWindow === 'exitDist'" class="if-window-div-poll-create">
+    <div class="regular-text-poll-create regular-size-poll-create"> Название </div>
+    <input
+      class="input-poll-create regular-size-poll-create"
+      autocomplete="off"
+      type="text"
+      v-model="exitDistData.name"
+    >
+    <div class="regular-text-poll-create regular-size-poll-create"> Наименование тем программы </div>
+    <transition-group name="fade" tag="div">
+      <input
+        v-for="(value, index) in exitDistData.task"
+        :key="index + 'expd'"
+        class="input-poll-create regular-size-poll-create"
+        autocomplete="off"
+        type="text"
+        @input="changePollArray($event.target.value, index, 'exitDistData.task')"
+        :value="value"
+      >
+    </transition-group>
+    <div
+      @click="postAxios('exitDistData')"
+      class="pointer submit-button-poll-create head-size-poll-create">
+      Создать анкету
+    </div>
+  </div>
+  <vue-modal-window
+    v-if="axiosFeedback.success"
+    @close-window="axiosFeedback.success = false">
+    <template v-slot:title>
+      Анкета создана.
+    </template>
+    <template v-slot:body>
+      Анкета была создана и находится на вкладке "Опросы" в объектах без категории.
+    </template>
+  </vue-modal-window>
+  <vue-modal-window v-if="axiosFeedback.error" @close-window="axiosFeedback.error = false">
+    <template v-slot:title>
+      При создании анкеты произошла ошибка.
+    </template>
+    <template v-slot:body>
+      Обратитесь к администратору WebTutor.
+    </template>
+  </vue-modal-window>
+  <vue-modal-window v-if="axiosFeedback.empty.show" @close-window="axiosFeedback.empty.show = false">
+    <template v-slot:title>
+      При создании анкеты произошла ошибка.
+    </template>
+    <template v-slot:body>
+      Необходимо заполнить поле "{{ axiosFeedback.empty.field }}".
+    </template>
+  </vue-modal-window>
+</div>
+
+<script src=".\pollCreate.js"></script>

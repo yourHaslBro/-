@@ -1,0 +1,91 @@
+.return-from-contex-window-vue {
+  margin: 5px 0px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DCEFFD;
+  color: #4D4742;
+}
+.show-component-from-contex-window-vue {
+  cursor: pointer;
+  font-style: italic;
+  color: #4184C5;
+}
+.show-component-from-contex-window-vue:hover {
+  color: #4D4742;
+}
+.model-block-from-context-window-vue {
+  margin: 15px 0px;
+}
+@media (min-width:1921px) {
+  .return-from-contex-window-vue {
+    padding: 5px 15px;
+  }
+  .text-size-from-contex-window-vue {
+    font-size: 20px;
+  }
+}
+
+@media (min-width:1681px) and (max-width:1920px) {
+  .return-from-contex-window-vue {
+    padding: 5px 15px;
+  }
+  .text-size-from-contex-window-vue {
+    font-size: 20px;
+  }
+}
+
+@media (min-width:1400px) and (max-width:1680px) {
+  .return-from-contex-window-vue {
+    padding: 5px 15px;
+  }
+  .text-size-from-contex-window-vue {
+    font-size: 18px;
+  }
+}
+
+@media (min-width:1200px) and (max-width:1399px) {
+  .return-from-contex-window-vue {
+    padding: 5px 15px;
+  }
+  .text-size-from-contex-window-vue {
+    font-size: 18px;
+  }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+  .return-from-contex-window-vue {
+    padding: 5px 15px;
+  }
+  .text-size-from-contex-window-vue {
+    font-size: 18px;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .return-from-contex-window-vue {
+    padding: 5px 15px;
+  }
+  .text-size-from-contex-window-vue {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:480px) and (max-width:767px) {
+  .return-from-contex-window-vue {
+    padding: 5px 15px;
+  }
+  .text-size-from-contex-window-vue {
+    font-size: 14px;
+  }
+}
+
+@media (max-width:479px) {
+  .return-from-contex-window-vue {
+    padding: 5px 15px;
+  }
+  .text-size-from-contex-window-vue {
+    font-size: 14px;
+  }
+}  

@@ -1,0 +1,252 @@
+[v-cloak] {
+  display: none;
+}
+a, a:hover, a:visited {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+.flex-container {
+  display: flex;
+  position: relative;
+}
+.font-color-ul {
+  font-family: 'Calibri Light';
+}
+.main-block {
+  background-color: rgba(229, 229, 229, 0.8);
+  color: #423F3F;
+  cursor: pointer;
+}
+.no-poiner {
+  cursor: inherit;
+}
+.no-pointer:hover {
+  color: #423F3F !important;
+}
+.right-close-open {
+  position: absolute;
+  justify-content: center;
+  right: 0px;
+  top: 0px;
+  border-left: 1px solid white;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  font-style: italic;
+}
+.fade-enter-active {
+  transition: opacity .5s;
+}
+.fade-leave-active {
+  transition: opacity .2s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+/* color variants */
+/* --------- */
+.red-piece {
+  background-color: #E51F3F;
+}
+.red-li:hover {
+  color: #E51F3F;
+}
+.tur-piece {
+  background-color: #87C4C4;
+}
+.tur-li:hover {
+  color: #87C4C4;
+}
+.blue-piece {
+  background-color: #4BACD0;
+}
+.blue-li:hover {
+  color: #4BACD0;
+}
+.green-piece {
+  background-color: #53C499;
+}
+.green-li:hover {
+  color: #53C499;
+}
+.azure-piece {
+  background-color: #8BC9F9;
+}
+.azure-li:hover {
+  color: #8BC9F9;
+}
+.sea-piece {
+  background-color: #36B9D0;
+}
+.sea-li:hover {
+  color: #36B9D0;
+}
+.yellow-piece {
+  background-color: #EFB339;
+}
+.yellow-li:hover {
+  color: #EFB339;
+}
+.purple-piece {
+  background-color: #B16BCB;
+}
+.purple-li:hover {
+  color: #B16BCB;
+}
+.lilac-piece {
+  background-color: #9EBCF6;
+}
+.lilac-li:hover {
+  color: #9EBCF6;
+}
+/* --------- */
+@media (min-width:1400px) {
+  .main-block-text-size {
+    font-size: 22px;
+  }
+  .li-block-text-size {
+    font-size: 18px;
+  }
+  .right-close-open-size {
+    font-size: 18px;
+    width: 80px;
+  }
+
+  .li-block-padding {
+    padding: 5px 0px;
+  }
+  .title-div-padding {
+    padding: 20px 30px;
+    width: calc(100% - 110px);
+  }
+  .right-close-open-padding {
+    padding: 0px 20px;
+  }
+  .li-padding-margin {
+    padding: 5px 30px;
+    margin-left: 12px;
+  }
+  .piece-size {
+    width: 12px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .main-block-text-size {
+    font-size: 20px;
+  }
+  .li-block-text-size {
+    font-size: 16px;
+  }
+  .right-close-open-size {
+    font-size: 16px;
+    width: 75px;
+  }
+
+  .li-block-padding {
+    padding: 5px 0px;
+  }
+
+  .title-div-padding {
+    padding: 20px 30px;
+    width: calc(100% - 110px);
+  }
+  .right-close-open-padding {
+    padding: 0px 15px;
+  }
+  .li-padding-margin {
+    padding: 5px 30px;
+    margin-left: 12px;
+  }
+  .piece-size {
+    width: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .main-block-text-size {
+    font-size: 18px;
+  }
+  .li-block-text-size {
+    font-size: 14px;
+  }
+  .right-close-open-size {
+    font-size: 14px;
+    width: 70px;
+  }
+
+  .li-block-padding {
+    padding: 5px 0px;
+  }
+
+  .title-div-padding {
+    padding: 15px 20px;
+    width: calc(100% - 110px);
+  }
+  .right-close-open-padding {
+    padding: 0px 15px;
+  }
+  .li-padding-margin {
+    padding: 5px 20px;
+    margin-left: 12px;
+  }
+  .piece-size {
+    width: 12px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .main-block-text-size {
+    font-size: 16px;
+  }
+  .li-block-text-size {
+    font-size: 12px;
+  }
+  .right-close-open-size {
+    font-size: 12px;
+    width: 70px;
+  }
+  .li-block-padding {
+    padding: 5px 0px;
+  }
+  .title-div-padding {
+    padding: 10px 10px;
+    width: calc(100% - 110px);
+  }
+  .right-close-open-padding {
+    padding: 0px 10px;
+  }
+  .li-padding-margin {
+    padding: 5px 10px;
+    margin-left: 12px;
+  }
+  .piece-size {
+    width: 12px;
+  }
+}
+@media (max-width: 479px) {
+  .main-block-text-size {
+    font-size: 13px;
+  }
+  .li-block-text-size {
+    font-size: 11px;
+  }
+  .right-close-open-size {
+    font-size: 11px;
+    width: 60px;
+  }
+  .li-block-padding {
+    padding: 5px 0px;
+  }
+  .title-div-padding {
+    padding: 10px 10px;
+    width: calc(100% - 110px);
+  }
+  .right-close-open-padding {
+    padding: 0px 10px;
+  }
+  .li-padding-margin {
+    padding: 5px 10px;
+    margin-left: 12px;
+  }
+  .piece-size {
+    width: 12px;
+  }
+}

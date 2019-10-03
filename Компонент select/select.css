@@ -1,0 +1,124 @@
+@supports (-webkit-overflow-scrolling: touch) {
+  @media (max-width: 768px) {
+  	body{
+  	    cursor: pointer;
+  	}
+  }
+}
+.select-vue {
+  position: relative;
+  display: block;
+  padding: 6px 2px 6px 10px;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 3px 3px 0 0;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 19px;
+  min-height: 19px;
+  text-overflow: ellipsis;
+  color: #4D4D4D;
+  overflow: hidden;
+  cursor: pointer;
+}
+.select-selected-vue,
+.select-vue:hover {
+  border-color: #4D4D4D;
+}
+.select-selected-vue:before,
+.select-selected-vue:after,
+.select-vue:hover:after,
+.select-vue:hover:before {
+  background-color: #4D4D4D !important;
+}
+.select-vue:before,
+.select-vue:after {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 10px;
+  height: 1px;
+  display: block;
+  content: '';
+  top: 15px;
+}
+.select-vue:before {
+  transform: rotate(-45deg);
+  right: 18px;
+}
+.select-vue:after {
+  transform: rotate(45deg);
+  right: 25px;
+}
+.body-option-select-vue {
+  width: calc(100% - 2px);
+  background-color: #fff;
+  border: 1px solid #4D4D4D;
+  border-radius: 0 0 3px 3px;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  margin-top: -1px;
+  max-height: 261px;
+  position: absolute;
+  overflow-y: auto;
+}
+.option-select-vue {
+  position: relative;
+  display: block;
+  padding: 9px 14px;
+  color: #4D4D4D;
+  background-color: #fff;
+  line-height: 19px;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.option-select-vue:hover {
+  background-color: rgba(65, 132, 197, 0.2);
+  color: #4D4D4D;
+}
+.main-select-vue {
+  position: relative;
+  font-family: 'Calibri Light';
+}
+@media (min-width:1200px) {
+  .size-select-vue {
+    font-size: 18px;
+  }
+}
+
+@media (min-width:768px) and (max-width:1199px) {
+  .size-select-vue {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:480px) and (max-width:767px) {
+  .size-select-vue {
+    font-size: 14px;
+  }
+}
+
+@media (max-width:479px) {
+  .size-select-vue {
+    font-size: 12px;
+  }
+}
+.body-option-select-vue::-webkit-scrollbar-thumb {
+  background-color: #4D4D4D;
+  -webkit-overflow-scrolling: touch;
+}
+.body-option-select-vue::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+.body-option-select-vue::-webkit-scrollbar {
+   width: 8px;
+   height: 7px;
+   background-color: #F5F5F5;
+}
+.body-option-select-vue::-webkit-scrollbar-thumb {
+	border-radius: 0px;
+}

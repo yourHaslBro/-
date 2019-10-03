@@ -1,0 +1,24 @@
+<script src="..\lodash.js"></script>
+<script src="..\vue.js"></script>
+
+<style media="screen">
+  *[v-cloak] {
+    display: none;
+  }
+</style>
+
+<div id="v-switch" v-cloak>
+  <div v-switch.dev="firstSwitch">
+    <div v-case="'q'">q</div>
+    <div v-case="'w'">w</div>
+    <div v-case="'e'">e</div>
+  </div>
+  <hr>
+  <div v-switch="secondSwitch">
+    <div v-case="'1'">1</div>
+    <div v-case="2">2</div>
+    <div v-case="'3'">3</div>
+  </div>
+</div>
+
+<script src=".\v-switch.js"></script>

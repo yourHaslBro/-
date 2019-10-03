@@ -1,0 +1,39 @@
+<script src="..\vue.js"></script>
+<script src="..\lodash.js"></script>
+<link rel="stylesheet" href=".\sort.css">
+<style>
+  th {
+   border: 1px solid #000;
+  }
+  td {
+   padding: 10px;
+   border: 1px solid #000;
+  }
+table {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+</style>
+
+<div id="sort-example">
+  <vue-sort
+    style="margin: 0 auto;"
+    hover-color="green"
+    :field-array="forSort"
+    @sort-change="sortObj = $event"
+  > Выберите поле для сортировки: </vue-sort>
+  <table>
+    <tr>
+      <td>Имя</td>
+      <td>Возраст</td>
+    </tr>
+    <tr v-for="f in forVForArray">
+      <td>{{ f.name }}</td>
+      <td>{{ f.num }}</td>
+    </tr>
+  </table>
+  <!--<div v-for="value in forVForArray"> {{ value }} </div>-->
+</div>
+
+<script src=".\sort.js"></script>

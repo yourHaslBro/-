@@ -1,0 +1,226 @@
+[v-cloak] {
+  display: none;
+}
+.background-modal {
+  position:fixed;
+  background-color:rgba(242, 242, 242, 0.5);
+  height: 100vh;
+  width: 100vw;
+  left:0px;
+  top:0px;
+  z-index:5;
+}
+.window-modal {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  background-color:white;
+  box-shadow: 0px 4px 8px -2px rgba(0,0,0,0.61);
+  z-index:6;
+}
+.head-modal {
+  background-color: #8bc9f9;
+}
+.close-modal {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  opacity: 1;
+  cursor: pointer;
+}
+.close-modal:hover {
+  opacity: 0.5;
+}
+.close-modal:before, .close-modal:after {
+  position: absolute;
+  content: ' ';
+  width: 2px;
+  background-color: white;
+}
+.close-modal:before {
+  transform: rotate(45deg);
+}
+.close-modal:after {
+  transform: rotate(-45deg);
+}
+.text-modal {
+  font-family: 'Calibri Light';
+  text-align: center;
+}
+
+@media (min-width:1921px) {
+  .window-modal {
+    height: 300px;
+    width: 500px;
+  }
+  .head-modal {
+    height: 50px;
+  }
+  .close-modal {
+    width: 20px;
+    height: 20px;
+  }
+  .close-modal:before, .close-modal:after {
+    height: 20px;
+    left: 15px;
+  }
+  .text-modal {
+    font-size: 20px;
+    padding: 20px;
+  }
+}
+
+@media (min-width:1681px) and (max-width:1920px) {
+  .window-modal {
+    height: 300px;
+    width: 500px;
+  }
+  .head-modal {
+    height: 50px;
+  }
+  .close-modal {
+    width: 20px;
+    height: 20px;
+  }
+  .close-modal:before, .close-modal:after {
+    height: 20px;
+    left: 15px;
+  }
+  .text-modal {
+    font-size: 20px;
+    padding: 20px;
+  }
+}
+
+@media (min-width:1400px) and (max-width:1680px) {
+  .window-modal {
+    height: 300px;
+    width: 500px;
+  }
+  .head-modal {
+    height: 50px;
+  }
+  .close-modal {
+    width: 20px;
+    height: 20px;
+  }
+  .close-modal:before, .close-modal:after {
+    height: 20px;
+    left: 15px;
+  }
+  .text-modal {
+    font-size: 20px;
+    padding: 20px;
+  }
+}
+
+@media (min-width:1200px) and (max-width:1399px) {
+  .window-modal {
+    height: 300px;
+    width: 500px;
+  }
+  .head-modal {
+    height: 50px;
+  }
+  .close-modal {
+    width: 20px;
+    height: 20px;
+  }
+  .close-modal:before, .close-modal:after {
+    height: 20px;
+    left: 15px;
+  }
+  .text-modal {
+    font-size: 20px;
+    padding: 20px;
+  }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+  .window-modal {
+    height: 270px;
+    width: 450px;
+  }
+  .head-modal {
+    height: 40px;
+  }
+  .close-modal {
+    width: 20px;
+    height: 20px;
+  }
+  .close-modal:before, .close-modal:after {
+    height: 20px;
+    left: 15px;
+  }
+  .text-modal {
+    font-size: 18px;
+    padding: 20px;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .window-modal {
+    height: 270px;
+    width: 450px;
+  }
+  .head-modal {
+    height: 40px;
+  }
+  .close-modal {
+    width: 20px;
+    height: 20px;
+  }
+  .close-modal:before, .close-modal:after {
+    height: 20px;
+    left: 15px;
+  }
+  .text-modal {
+    font-size: 18px;
+    padding: 20px;
+  }
+}
+
+@media (min-width:480px) and (max-width:767px) {
+  .window-modal {
+    height: 250px;
+    width: 420px;
+  }
+  .head-modal {
+    height: 40px;
+  }
+  .close-modal {
+    width: 17px;
+    height: 17px;
+  }
+  .close-modal:before, .close-modal:after {
+    height: 17px;
+    left: 15px;
+  }
+  .text-modal {
+    font-size: 16px;
+    padding: 20px;
+  }
+}
+
+@media (max-width:479px) {
+  .window-modal {
+    height: 150px;
+    width: 270px;
+  }
+  .head-modal {
+    height: 30px;
+  }
+  .close-modal {
+    width: 17px;
+    height: 17px;
+  }
+  .close-modal:before, .close-modal:after {
+    height: 17px;
+    left: 15px;
+  }
+  .text-modal {
+    font-size: 16px;
+    padding: 20px;
+  }
+}

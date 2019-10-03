@@ -1,0 +1,26 @@
+<script src="..\lodash.js"></script>
+<script src="..\vue.js"></script>
+<script src="..\Компонент таблица с render-функцией\table.js"></script>
+<link rel="stylesheet" href="..\Компонент таблица с render-функцией\table.css">
+<script src="..\Компонент заголовок\title.js"></script>
+<link rel="stylesheet" href="..\Компонент заголовок\title.css">
+
+<style media="screen">
+#table-example {
+  width: 80%;
+  margin: 40px 10%;
+}
+.table-margin {
+  width: 90%;
+  margin: 10px 2%;
+}
+</style>
+
+<div id="table-example" v-cloak>
+  <vue-title img-url="./learn.png" color="blue">
+    Назначенные курсы
+  </vue-title>
+  <type-table class="table-margin" color="sea" :head="head" :body="body" :column-style="style" :column-sort="sort"> </type-table>
+</div>
+
+<script src=".\tableExample.js"></script>

@@ -1,0 +1,43 @@
+<script src="..\lodash.js"></script>
+<script src="..\vue.js"></script>
+<script src="..\Компонент текстовое поле\textInput.js"></script>
+<link rel="stylesheet" href="..\Компонент текстовое поле\textInput.css">
+<script src="..\Компонент заголовок\title.js"></script>
+<link rel="stylesheet" href="..\Компонент заголовок\title.css">
+<script src="..\Компонент список с выбором цвета\colorUl.js"></script>
+<link rel="stylesheet" href="..\Компонент список с выбором цвета\colorUl.css">
+<link rel="stylesheet" href=".\selfRollBlock.css">
+<style>
+body {
+  overflow-x: hidden;
+}
+.search-width {
+  width: 25%;
+}
+.align-container {
+  text-align: right;
+  text-align: -webkit-right;
+}
+</style>
+
+<div id="vue-self-roll-course" class="self-roll-block-home" v-cloak>
+  <vue-title img-url="./book.png" color="black">
+    Курсы для самообразования
+  </vue-title>
+  <div class="align-container">
+    <text-input class="search-width" v-model="searchComputed" placeholder="поиск по курсам"></text-input>
+  </div>
+  <div class="self-roll-bad-search font-color-ul li-block-text-size">
+    <div v-if="wrongSearchTextShow"> По вашему запросу ничего не найдено! </div>
+  </div>
+  <vue-color-ul
+    class="self-roll-comps-home"
+    :search-str="searchComputed"
+    v-for="uA in ulsArray"
+    :main-info="uA.info"
+    :main-color='uA.color'
+    :key="uA.color"
+  ></vue-color-ul>
+</div>
+
+<script src=".\selfRollBlock.js"></script>
